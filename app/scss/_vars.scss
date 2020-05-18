@@ -1,0 +1,15 @@
+// User variables:
+// $accent: #e84118;
+$accent: #18dcff;
+$accent2: #000;
+$accent3: #fff;
+$disable: #2d3436;
+$warning: #eb2f06;
+$done: #32ff7e;
+$activeDisable: #f7f1e3;
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A lot of work and can not remember all the things? Use the to-do list.">
+  <title>You can do it!</title>
+  <link rel="shortcut icon" href="images/check-checked-checklist-mark-tick-todo-list.ico" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="to-do">
+      <div class="container">
+        <div class="to-do__inner">
+          <div class="to-do__header">
+            <div class="logo">
+              <h1 class="logo__text">to do it</h1>
+              <h1 class="logo__text">to do it</h1>
+            </div>
+          </div>
+          <div class="to-do__main">
+            <div class="to-do__main-control">
+              <div class="to-do__main-btn">
+                <button class="btn btn--sz-xl" data-tab="id_001" type="button">Add new</button>
+              </div>
+              <div class="to-do__main-btn">
+                <button class="btn btn--sz-xl" data-tab="id_002" type="button">Search</button>
+              </div>
+            </div>
+            <form class="form" name="addTask" id="id_001" aria-label="form add to do task">
+              <div class="form__row">
+                <label class="form__label" for="id_01">Title</label>
+                <input class="form__input" name="title" id="id_01" type="text">
+              </div>
+              <div class="form__row">
+                <label class="form__label" for="id_02">Description</label>
+                <input class="form__input" name="description" id="id_02" type="text">
+              </div>
+              <button class="form__btn btn btn--sz-md" type="submit">
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                Add
+              </button>
+              <button class="close-btn" type="button" aria-label="close button"></button>
+            </form>
+            <form class="form form--search" name="searchForm" id="id_002" aria-label="form search">
+              <div class="form__row">
+                <input class="form__input" type="search" name="search">
+              </div>
+              <button class="form__btn btn btn--sz-md" type="submit">
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                <span class="btn__border"></span>
+                Search
+              </button>
+              <button class="close-btn" type="button" aria-label="close button"></button>
+            </form>
+            <div class="content">
+              <div class="content__control">
+                <div class="select__wrap">
+                  <ul class="select">
+                    <li class="select__item">Bulk action
+                      <div class="select__item-wrap">
+                        <ul class="select__drop">
+                          <li class="select__drop-item js-action-hold">Hold/Unhold</li>
+                          <li class="select__drop-item js-action-done">Mark as done</li>
+                          <li class="select__drop-item warning js-action-remove">Remove</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="select">
+                    <li class="select__item">Sort
+                      <div class="select__item-wrap">
+                        <ul class="select__drop">
+                          <li class="select__drop-item js-sort-status">By status</li>
+                          <li class="select__drop-item js-sort-title">By title</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/todos.js"></script>
+</body>
+
+</html>
