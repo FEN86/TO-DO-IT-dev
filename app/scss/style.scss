@@ -100,7 +100,10 @@
     }
     &:hover::before {
       height: 200%;
-    }   
+    }
+    &:focus {      
+      outline: none;
+    }
   }
   &--sz-md {
     width: 100%;

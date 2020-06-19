@@ -12,8 +12,8 @@ const STATUS_PRIORITY = {
 
 const todos = {
   listContainer: document.querySelector('.list'),
-
   addForm: document.forms['addTask'],
+
   get inputTitle() { return this.addForm.elements['title']; },
   get inputDesc() { return this.addForm.elements['description']; },
 
